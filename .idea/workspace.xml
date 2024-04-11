@@ -9,18 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5c0b54-d145-463a-8979-c5286026b7ca" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/second/exit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ruspringcourse/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContextMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/111applicationContextMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/111web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="be5c0b54-d145-463a-8979-c5286026b7ca" name="Changes" comment="Добавил два варианта конфигурации SpringMVC.&#10;Добавлен примитивный калькулятор и страницы с отобращением обььектов класса Person (реализация с помощью динамического массива а не БД)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +208,7 @@
       <workItem from="1712320292458" duration="2257000" />
       <workItem from="1712327728198" duration="7194000" />
       <workItem from="1712567486867" duration="5503000" />
-      <workItem from="1712575782047" duration="29866000" />
+      <workItem from="1712575782047" duration="30167000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -229,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712579618605</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавил два варианта конфигурации SpringMVC.&#10;Добавлен примитивный калькулятор и страницы с отобращением обььектов класса Person (реализация с помощью динамического массива а не БД)">
+      <option name="closed" value="true" />
+      <created>1712815798022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712815798023</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +234,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Добавил два варианта конфигурации SpringMVC.&#10;Добавлен примитивный калькулятор и страницы с отобращением обььектов класса Person (реализация с помощью динамического массива а не БД)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил два варианта конфигурации SpringMVC.&#10;Добавлен примитивный калькулятор и страницы с отобращением обььектов класса Person (реализация с помощью динамического массива а не БД)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
