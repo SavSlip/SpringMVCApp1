@@ -17,4 +17,5 @@ public class MySpringMVCDispatherServletInit extends AbstractAnnotationConfigDis
     protected String[] getServletMappings() {
         return new String[] {"/"};
     }
+
 }
