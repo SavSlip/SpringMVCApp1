@@ -1,0 +1,169 @@
+Index: .idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta
+===================================================================
+diff --git a/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta
+new file mode 100644
+--- /dev/null	
++++ b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta	
+@@ -0,0 +1,2 @@
++#n:performance_schema
++!<md> [null, 0, null, null, -2147483648, -2147483648]
+Index: .idea/dataSources.local.xml
+===================================================================
+diff --git a/.idea/dataSources.local.xml b/.idea/dataSources.local.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/dataSources.local.xml	
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="dataSourceStorageLocal" created-in="IU-233.14475.28">
++    <data-source name="@localhost" uuid="69f2c763-4365-430d-8d70-a82b04b4f62b">
++      <database-info product="MySQL" version="8.3.0" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="8.3.0" exact-driver-version="8.2">
++        <extra-name-characters>#@</extra-name-characters>
++        <identifier-quote-string>`</identifier-quote-string>
++        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
++      </database-info>
++      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
++      <secret-storage>master_key</secret-storage>
++      <user-name>root1</user-name>
++      <schema-mapping>
++        <introspection-scope>
++          <node kind="schema">
++            <name qname="@" />
++            <name qname="mydbtest" />
++          </node>
++        </introspection-scope>
++      </schema-mapping>
++    </data-source>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/sys.zb4BAA.meta
+===================================================================
+diff --git a/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/sys.zb4BAA.meta b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/sys.zb4BAA.meta
+new file mode 100644
+--- /dev/null	
++++ b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/sys.zb4BAA.meta	
+@@ -0,0 +1,2 @@
++#n:sys
++!<md> [null, 0, null, null, -2147483648, -2147483648]
+Index: src/main/java/ruspringcourse/DAO/PersonDAO.java
+===================================================================
+diff --git a/src/main/java/ruspringcourse/DAO/PersonDAO.java b/src/main/java/ruspringcourse/DAO/PersonDAO.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/ruspringcourse/DAO/PersonDAO.java	
+@@ -0,0 +1,17 @@
++package ruspringcourse.DAO;
++
++import ruspringcourse.model.Person;
++
++import java.util.List;
++
++public interface PersonDAO {
++    public List<Person> getAllPeople();
++
++    public Person getPersonByIndex(int index);
++
++    public void save(Person person);
++
++    public void update(int id, Person person);
++
++    public void delete(int id);
++}
+Index: .idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/mydbtest.vP7x6w.meta
+===================================================================
+diff --git a/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/mydbtest.vP7x6w.meta b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/mydbtest.vP7x6w.meta
+new file mode 100644
+--- /dev/null	
++++ b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/mydbtest.vP7x6w.meta	
+@@ -0,0 +1,2 @@
++#n:mydbtest
++!<md> [0, 0, null, null, -2147483648, -2147483648]
+Index: .idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/mysql.osA4Bg.meta
+===================================================================
+diff --git a/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/mysql.osA4Bg.meta b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/mysql.osA4Bg.meta
+new file mode 100644
+--- /dev/null	
++++ b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/mysql.osA4Bg.meta	
+@@ -0,0 +1,2 @@
++#n:mysql
++!<md> [null, 0, null, null, -2147483648, -2147483648]
+Index: src/main/java/ruspringcourse/DAO/PersonDAOHibernate.java
+===================================================================
+diff --git a/src/main/java/ruspringcourse/DAO/PersonDAOHibernate.java b/src/main/java/ruspringcourse/DAO/PersonDAOHibernate.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/ruspringcourse/DAO/PersonDAOHibernate.java	
+@@ -0,0 +1,62 @@
++package ruspringcourse.DAO;
++
++import org.hibernate.Session;
++import org.hibernate.SessionFactory;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Component;
++import org.springframework.transaction.annotation.Transactional;
++import ruspringcourse.model.Person;
++
++import java.util.List;
++
++@Component
++public class PersonDAOHibernate implements PersonDAO{
++    private final SessionFactory sessionFactory;
++
++    @Autowired
++    public PersonDAOHibernate(SessionFactory sessionFactory) {
++        this.sessionFactory = sessionFactory;
++    }
++
++    @Override
++    @Transactional
++    public List<Person> getAllPeople() {
++        Session session = sessionFactory.getCurrentSession();
++
++        List<Person> people = session.createQuery("select p from Person p", Person.class)
++                .getResultList();
++        return people;
++    }
++
++    @Override
++    @Transactional
++    public Person getPersonByIndex(int index) {
++        Session session = sessionFactory.getCurrentSession();
++        return session.get(Person.class, index);
++    }
++
++    @Override
++    @Transactional
++    public void save(Person person) {
++    Session session = sessionFactory.getCurrentSession();
++    session.save(person);
++    }
++
++    @Override
++    @Transactional
++    public void update(int id, Person person) {
++        Session session = sessionFactory.getCurrentSession();
++        Person originalPerson = session.get(Person.class, id);
++        originalPerson.setName(person.getName());
++        originalPerson.setAge(person.getAge());
++        originalPerson.setEmail(person.getEmail());
++    }
++
++    @Override
++    @Transactional
++    public void delete(int id) {
++        Session session = sessionFactory.getCurrentSession();
++        Person person = session.get(Person.class, id);
++        session.delete(person);
++    }
++}
+Index: .idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta
+===================================================================
+diff --git a/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta
+new file mode 100644
+--- /dev/null	
++++ b/.idea/dataSources/69f2c763-4365-430d-8d70-a82b04b4f62b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta	
+@@ -0,0 +1,2 @@
++#n:information_schema
++!<md> [null, 0, null, null, -2147483648, -2147483648]
